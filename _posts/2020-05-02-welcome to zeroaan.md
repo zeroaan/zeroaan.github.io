@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to zeroaan!"
 date:   2020-05-02 19:43:59
 author: zeroaan
-categories: python
+categories: Dummy
 tags: python code
 cover:  "/assets/header_image.png"
 ---
