@@ -8,5 +8,5 @@ main_nav: true
 ![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
 
 
-- JINYOUNG AHN
+## JINYOUNG AHN
 - Gachon Univ. Industrial Engineering, Computer Engineering
