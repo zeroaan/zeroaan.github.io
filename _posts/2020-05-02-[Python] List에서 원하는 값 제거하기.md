@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python List 값 제거하기"
+title:  "[Python] List에서 원하는 값 제거하기"
 date:   2020-05-02 19:43:59
 author: zeroaan
 categories: python
