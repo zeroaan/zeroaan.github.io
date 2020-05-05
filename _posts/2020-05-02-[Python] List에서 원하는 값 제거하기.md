@@ -8,7 +8,7 @@ categories: python
 # cover:  "/assets/header_image.jpg"
 ---
 
-### list 에서 원하는 값을 제거하고 싶을 때 사용할 수 있는 함수는 remove, pop, clear 그리고 del 키워드가 있다.
+list 에서 원하는 값을 제거하고 싶을 때 사용할 수 있는 함수는 remove, pop, clear 그리고 del 키워드가 있다.
 
 - remove 함수를 사용해 자신이 지우고 싶은 값을 제거할 수 있다.
 - del키워드와 pop 함수는 해당 인덱스 값을 이용해 값을 제거할 수 있다.
