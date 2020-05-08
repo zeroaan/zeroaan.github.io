@@ -49,7 +49,9 @@ paginate_path: "/page:num/"
 #    tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: Zeroaan
+disqus_shortname: zeroaan
+disqus_url: https://zeroaan.disqus.com/
+disqus_id: zeroaan
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
