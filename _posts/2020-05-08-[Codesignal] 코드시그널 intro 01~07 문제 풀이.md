@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[CodeSignal] 코드시그널 intro 01~07 문제 풀이"
-date:   2020-05-07 10:46:20
+title:  "[Codesignal] 코드시그널 intro 01~07 문제 풀이"
+date:   2020-05-08 10:46:20
 author: zeroaan
 categories: codesignal
 # tags: python code
