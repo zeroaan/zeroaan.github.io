@@ -12,12 +12,12 @@ categories: python
 
 <br>
 
-먼저 문자열을 리스트로 만들기 위해서는 split 함수를 사용한다.<br>
+먼저 문자열을 리스트로 만들기 위해서는 **split 함수**를 사용한다.<br>
 사용법 : `문자열.split(구분)`
 
 <br>
 
-리스트를 문자열로 만들기 위해 join 함수를 사용한다.<br>
+리스트를 문자열로 만들기 위해 **join 함수**를 사용한다.<br>
 사용법 : `"".join(리스트)`
 
 <br>
@@ -50,7 +50,7 @@ print(str_number)
 ```python
 animal = ['하마', '원숭이', '사자', '호랑이', '고양이', '강아지']
 
-str_animal = "-".join(animal) # ", " 를 포함하여 문자열로 변환한다
+str_animal = "-".join(animal) # - 을 포함하여 문자열로 변환한다
 
 print(str_animal)
 ```
