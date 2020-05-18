@@ -10,13 +10,16 @@ categories: python
 
 list 에서 배열의 index에 접근하는 방법이 여러가지 있다.
 
+<br>
+
 기본적으로 사용하는 index 접근 방법이다.<br>
-`list[A:B] = index A 부터 index B-1 까지`
+`list[A:B] # index A 부터 index B-1 까지`
 
 <br>
 
 ```python
 >> list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 >> list
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -33,9 +36,9 @@ list 에서 배열의 index에 접근하는 방법이 여러가지 있다.
 <br>
 
 다음은 더 나아가 거꾸로 출력하는 방법과 간격을 두어 출력하는 방법을 알아보겠다.<br>
+`list[A:B:C] # index A 부터 index B-1 까지 C 간격으로`
 ```python
 >> list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
 
 >> list[::-1] # 역순으로 -1칸 간격으로
 [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
