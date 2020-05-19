@@ -81,10 +81,10 @@ def makeArrayConsecutive2(statues):
 
 <br>
 
-#### 07. almostIncreasingSequence.py *(not pass)*
+#### 07. almostIncreasingSequence.py
 : Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
 <br>
-#### *not pass*
+#### *(not pass)*
 ```python
 def almostIncreasingSequence(sequence):
     a = 0
