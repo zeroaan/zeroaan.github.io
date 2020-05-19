@@ -83,7 +83,8 @@ def makeArrayConsecutive2(statues):
 
 #### 07. almostIncreasingSequence.py *(not pass)*
 : Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
-
+<br>
+#### *not pass*
 ```python
 def almostIncreasingSequence(sequence):
     a = 0
@@ -93,4 +94,19 @@ def almostIncreasingSequence(sequence):
     if a > 1:
         return False
     return True  
+```
+<br>
+#### *(solution)*
+```python
+def almostIncreasingSequence(sequence):
+    count_decreasing_sq = 0
+    for i in range(len(sequence) - 1):
+        if sequence[i+1] <= sequence[i]:
+            count_decreasing_sq += 1
+            if (i >= 1) and (sequence[i+1] <= sequence[i-1]):
+                if (len(sequence) - 2 > i) and (sequence[i+2] <= sequence[i]):
+                    count_decreasing_sq += 1
+        if count_decreasing_sq > 1:
+            return False
+    return True
 ```
