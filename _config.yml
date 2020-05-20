@@ -27,6 +27,13 @@ highlightjs_theme: "monokai-sublime"
 paginate: 10
 paginate_path: "/page:num/"
 
+# Math equation
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 #pagination:
