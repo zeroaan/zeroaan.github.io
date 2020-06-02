@@ -79,7 +79,7 @@ Logistic Regression 에서는 y의 값이 확률이기 때문에 0과 1 사이�
 
 <br>
 
-실제 데이터인 유방암 데이터 셋으로 KNN을 진행해보겠다.
+실제 데이터인 유방암 데이터 셋으로 Logistic Regression을 진행해보겠다.
 
 ```python
 from sklearn.datasets import load_breast_cancer
@@ -93,11 +93,15 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 ```
 
+<br>
+
 훈련 세트의 정확도
 ```python
 print(model.score(X_train, y_train))
 ```
 `0.960093896713615`
+
+<br>
 
 테스트 세트의 정확도
 ```python
