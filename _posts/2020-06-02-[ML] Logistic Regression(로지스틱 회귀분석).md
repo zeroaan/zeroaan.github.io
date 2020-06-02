@@ -76,3 +76,31 @@ Logistic Regression 에서는 y의 값이 확률이기 때문에 0과 1 사이�
 이 식을 그래프로 그려보면 아래와 같은 곡선이 나오는데 이 곡선을 Logistic Curve 라 부른다.
 
 ![logistic_curve]({{site.baseurl}}/img/logistic_curve.png)
+
+<br>
+
+실제 데이터인 유방암 데이터 셋으로 KNN을 진행해보겠다.
+
+```python
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+
+cancer = load_breast_cancer()
+X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, stratify=cancer.target, random_state=66)
+
+model = LogisticRegression()
+model.fit(X_train, y_train)
+```
+
+훈련 세트의 정확도
+```python
+print(model.score(X_train, y_train))
+```
+`0.960093896713615`
+
+테스트 세트의 정확도
+```python
+print(model.score(X_test, y_test))
+```
+`0.9370629370629371`
