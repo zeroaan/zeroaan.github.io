@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[ML] t-검정(t-test)"
+title:  "[ML] t-검정(t-test), Mann-Whitney U test"
 date:   2020-06-03 21:39:04
 author: zeroaan
 categories: ml/dl
@@ -278,3 +278,37 @@ print("p-value:", ttest_rel(pratice, exam)[1])
 p-value가 0.05보다 작으므로 대립가설이 채택된다.
 
 즉, 연습을 하기 전과 후의 점수는 차이가 있다라고 할 수 있다.
+
+<br><br>
+
+### Mann-Whitney U test
+: 두 집단의 데이터가 정규성을 만족하지 않거나 집단의 데이터가 작을 때 두 집단의 차이를 분석하는 방법이다.
+두 집단 각각의 값들의 순위들을 합한 것을 사용하여 진행한다.
+
+예를 들어 A학과와 B학과의 점수를 예로 들어 Mann-Whitney U test를 해보겠다.
+
+- 귀무가설 : A학과와 B학과의 등수의 차이가 없다.
+- 대립가설 : A학과와 B학과의 등수의 차이가 있다.
+
+
+```python
+from scipy.stats import mannwhitneyu
+
+A = [80, 70, 65, 90, 95]
+B = [100, 95, 65, 75, 75]
+
+print("p-value:", mannwhitneyu(A, B)[1])
+```
+
+    p-value: 0.4165144468597607
+    
+
+p-value가 0.05 이상이므로 귀무가설이 채택된다.
+
+즉, A학과와 B학과의 등수에는 차이가 없다라고 할 수 있다.
+
+<br>
+
+**Mann-Whitney U test는 순위만 비교한 것이기 때문에 두 집단의 크기의 차이를 언급할 수 없다는 단점이 있지만, 
+정규분포에 대한 가정을 하지 않기 때문에 순서가 있는 경우에는 어떠한 경우에도 사용할 수 있다는 장점이 있다.**
+
