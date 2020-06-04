@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[ML] Logistic Regression(로지스틱 회귀분석)"
+title:  "[ML] 로지스틱 회귀분석(Logistic Regression)"
 date:   2020-06-02 21:03:25
 author: zeroaan
 categories: ml/dl
