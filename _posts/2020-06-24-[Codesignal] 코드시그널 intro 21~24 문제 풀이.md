@@ -39,7 +39,7 @@ Assume that you are jumping from the point with coordinate 0 to the right. You a
 
 Find the minimal length of the jump enough to avoid all the obstacles.
 
-**not pass**
+**(not pass)**
 ```python
 def avoidObstacles(inputArray):
     for i in range(1, 1001):
