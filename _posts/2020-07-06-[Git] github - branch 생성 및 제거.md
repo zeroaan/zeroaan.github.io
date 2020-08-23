@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Git] github 사용법과 기초 명령어"
-date:   2020-05-10 16:14:05
+title:  "[Git] github - branch 생성 및 제거"
+date:   2020-07-06 21:03:55
 author: zeroaan
 categories: git
 # tags: python code
